@@ -17,10 +17,9 @@ export class SongCardComponent implements OnInit {
   @Input() public playlistThubmnail!: string;
   @Input() public title!: string;
   @Input() public description!: string;
-  @ViewChild('abc') scroll!: ElementRef;
-  @ViewChild('abcd') scrolls!: ElementRef;
+  @ViewChild('scrollDiv') scroll!: ElementRef;
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {}
 
@@ -28,6 +27,5 @@ export class SongCardComponent implements OnInit {
   onMouseWheel(event: WheelEvent) {
     const delta = Math.sign(event.deltaY);
     this.scroll.nativeElement.scrollLeft += delta * 50;
-    this.scrolls.nativeElement.scrollLeft += delta * 50;
   }
 }
