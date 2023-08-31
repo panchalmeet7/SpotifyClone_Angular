@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SearchService } from 'src/app/services/search.service';
 
 @Component({
   selector: 'app-top-navbar',
@@ -7,8 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./top-navbar.component.css'],
 })
 export class TopNavbarComponent implements OnInit {
-  constructor(private router: Router) {}
-  ngOnInit(): void {}
+  // isSearchVissible: boolean = false;
+  constructor(private router: Router, private searchService: SearchService) {}
+
+  ngOnInit(): void {
+    // this.searchService.isSearchVissible.subscribe((status) => {
+    //   this.isSearchVissible = status;
+    // });
+  }
 
   onNavigateLoginIn() {
     this.router.navigate(['login']);

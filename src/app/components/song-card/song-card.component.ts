@@ -6,7 +6,6 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-song-card',
@@ -21,7 +20,7 @@ export class SongCardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 
   @HostListener('wheel', ['$event'])
   onMouseWheel(event: WheelEvent) {

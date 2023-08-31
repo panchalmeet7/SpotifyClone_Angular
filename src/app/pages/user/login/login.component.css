@@ -7,13 +7,18 @@
   gap: 40px;
 }
 
-input {
+input[type="text"],
+input[type="password"] {
   padding: 10px;
   border: none;
   border: 1px solid rgb(88, 87, 87);
   border-radius: 4px;
   width: 400px;
   height: 50px;
+}
+
+input ::placeholder {
+  color: rgb(88, 87, 87);
 }
 
 #RememberMe_loginbtn {
@@ -30,9 +35,34 @@ input {
 .login_btn {
   background-color: #1ed760;
   color: black;
-  padding: 14px;
+  padding: 10px;
   border-radius: 28px;
-  width: 150px;
+  width: 130px;
   border: none;
   font-weight: bold;
+}
+
+.action_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+#remember_me {
+  background-color: #1ed760;
+  font-size: 20px;
+}
+
+.main_container {
+  transform: translate(0, 30%);
+}
+
+.signup_for_spotifybtn {
+  background-color: white;
+  color: gray;
+  padding: 10px;
+  border-radius: 28px;
+  border: 1px solid gray;
 }

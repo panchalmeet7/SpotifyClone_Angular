@@ -2,12 +2,11 @@
   width: 100%;
   height: 74px;
   background: #0f0f0f;
-  position: fixed;
   top: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   color: white;
 }
@@ -18,6 +17,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 40px;
+  margin-right: 100px;
 }
 
 .spotify_top-nav_login {
@@ -35,8 +35,16 @@
   font-weight: bold;
 }
 
-.focus_title {
-  flex-basis: 780px;
-  margin-left: -357px;
-  font-size: 22px;
+input.search_bar {
+  border: none;
+  width: 350px;
+  border-radius: 25px;
+  height: 40px;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+input.search_bar::placeholder {
+  color: gray;
+  letter-spacing: 0.5px;
 }

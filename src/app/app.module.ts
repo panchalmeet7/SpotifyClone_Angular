@@ -11,7 +11,6 @@ import { SignupComponent } from './pages/user/signup/signup.component';
 import { SongCardComponent } from './components/song-card/song-card.component';
 import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 import { ButtonComponent } from './components/button/button.component';
-import { ScrollDirective } from './directives/scroll.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { ScrollDirective } from './directives/scroll.directive';
     SongCardComponent,
     TopNavbarComponent,
     ButtonComponent,
-    ScrollDirective,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

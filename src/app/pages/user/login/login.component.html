@@ -1,5 +1,7 @@
-<div class="container">
+<div class="container" class="main_container">
   <div class="login_container">
+    <img src="/assets/Spotify_Logo_Green.png" alt="" width="300px" />
+    <hr style="width: 30%; border: 1px solid black" />
     <div>
       <label> <strong> Email Address or Username</strong></label> <br />
       <input type="text" placeholder="emial@email.com" />
@@ -11,7 +13,24 @@
         <a style="text-decoration: underline">Forgot Password?</a>
       </label>
     </div>
-    <button class="login_btn">Login</button>
-    <!-- timestamp : 1:15:29 -->
+    <div class="action_buttons">
+      <span
+        style="
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 10px;
+        "
+      >
+        <input type="checkbox" id="remember_me" />
+        <label for="remember_me"><strong>Remember Me?</strong></label>
+      </span>
+      <button class="login_btn" routerLink="/">Log In</button>
+    </div>
+    <hr style="width: 30%; border: 1px solid black" />
+    <strong>Dont have an account?</strong>
+    <button class="signup_for_spotifybtn" style="width: 20%">
+      SIGN UP FOR SPOTIFY
+    </button>
   </div>
 </div>

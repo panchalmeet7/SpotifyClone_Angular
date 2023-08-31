@@ -1,9 +1,8 @@
 .song-card {
   margin-left: 100px;
-  margin-top: 120px;
+  margin-top: 70px;
 }
 
-/* chat gpts styling */
 .spotify-card {
   border: none;
   border-radius: 10px;
@@ -35,15 +34,15 @@
 .play-pause-btn {
   background-color: #1db954;
   border: none;
-  border-radius: 50%; /* Makes the button round */
+  border-radius: 50%;
   padding: 10px;
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
+  width: 40px;
+  height: 40px;
   transition: background-color 0.3s;
 }
 
 .play-pause-btn:focus {
-  outline: none; /* Remove focus outline */
+  outline: none;
 }
 
 .play-pause-btn i {
